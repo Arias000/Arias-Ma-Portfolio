@@ -1,0 +1,552 @@
+/* Case study format - 黑底白字，保持原有字体 */
+
+.project-page--case-study .page {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: #ffffff;
+}
+
+/* 与 project-qiddiya 一致：固定透明导航叠在主图上 */
+.project-page--case-study .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 24px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+.project-page--case-study .site-header .logo,
+.project-page--case-study .site-header a { color: #fff; }
+
+/* 主图下方内容区：居中窄栏 */
+.project-page--case-study .case-study-main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* Hero / Title block */
+.project-page--case-study .case-study-hero {
+  padding: 48px 0 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project-page--case-study .case-study-title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 12px 0;
+  color: #ffffff;
+}
+
+.project-page--case-study .case-study-tagline {
+  font-size: 26px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 10px 0 22px 0;
+  white-space: nowrap;
+  font-family: 'Bodoni MT', 'Bodoni 72', 'Bodoni', 'Didot', 'Didot LT STD',
+    'Hoefler Text', 'Baskerville', 'Goudy Old Style', 'Garamond',
+    'Times New Roman', serif;
+  background-image: linear-gradient(135deg, #9be15d, #00e3ae);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-page--case-study .case-study-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+/* Overview block */
+.project-page--case-study .case-study-overview {
+  padding: 32px 0 40px;
+}
+
+.project-page--case-study .case-study-overview h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+.project-page--case-study .case-study-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px 32px;
+  margin-bottom: 24px;
+}
+
+.project-page--case-study .case-study-overview-item strong {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+}
+
+.project-page--case-study .case-study-overview-item p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  color: #ffffff;
+}
+
+.project-page--case-study .case-study-overview-note {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  font-style: italic;
+  margin: 0;
+}
+
+.project-page--case-study .case-study-cta {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: opacity 0.2s;
+}
+
+.project-page--case-study .case-study-cta:hover {
+  opacity: 0.9;
+}
+
+/* Section blocks */
+.project-page--case-study .case-study-section {
+  padding: 40px 0 0;
+}
+
+.project-page--case-study .case-study-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px 0;
+  background-image: linear-gradient(135deg, #9be15d, #00e3ae);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-page--case-study .case-study-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 16px 0;
+}
+
+.project-page--case-study .mantou-process-note {
+  /* Use a different voice for the process narrative */
+  font-family: Garamond, 'Goudy Old Style', 'Hoefler Text', 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+/* Increase spacing between full-width mantou images and their following text */
+.project-page--case-study .workflow-image-wrapper--full + p.mantou-process-note {
+  margin-top: 28px;
+}
+
+/* The first Design Goal line is a plain <p> (without mantou-process-note class) */
+.project-page--case-study .workflow-image-wrapper--full + p:not(.mantou-process-note) {
+  margin-top: 28px;
+}
+
+.project-page--case-study .case-study-section p:last-child {
+  margin-bottom: 0;
+}
+
+.project-page--case-study #case-study-background h2,
+.project-page--case-study #case-study-background p {
+  font-style: italic;
+}
+
+.project-page--case-study #case-study-background p {
+  font-family: Garamond, 'Goudy Old Style', 'Hoefler Text', 'Times New Roman', serif;
+}
+
+/* The Process */
+.project-page--case-study .case-study-process {
+  padding: 48px 0 0;
+}
+
+.project-page--case-study .case-study-process h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 24px 0;
+  background-image: linear-gradient(135deg, #9be15d, #00e3ae);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-page--case-study .case-study-process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 32px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.project-page--case-study .case-study-process-steps a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-page--case-study .case-study-step {
+  padding: 32px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 32px;
+}
+
+.project-page--case-study .case-study-step-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 20px 0;
+}
+
+.project-page--case-study .case-study-step h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 24px 0 8px 0;
+  color: #ffffff;
+}
+
+.project-page--case-study .case-study-step-title {
+  font-size: 30px;
+}
+
+.project-page--case-study .case-study-step h3:first-child {
+  margin-top: 0;
+}
+
+.project-page--case-study .case-study-step p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 12px 0;
+}
+
+.project-page--case-study .case-study-list {
+  margin: 0 0 16px 0;
+  padding-left: 24px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.project-page--case-study .case-study-list li {
+  margin-bottom: 8px;
+}
+
+.project-page--case-study .case-study-table {
+  width: 100%;
+  margin: 24px 0 32px;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-page--case-study .case-study-table thead {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.project-page--case-study .case-study-table th,
+.project-page--case-study .case-study-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  vertical-align: top;
+}
+
+.project-page--case-study .case-study-table th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.project-page--case-study .case-study-table td:first-child {
+  width: 32%;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+}
+
+.project-page--case-study .case-study-table tbody tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.project-page--case-study .case-study-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Metrics cards under test.png */
+.project-page--case-study .case-study-metrics-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-page--case-study .case-study-metric-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-page--case-study .case-study-metric-box {
+  width: 100%;
+  max-width: 190px;
+  border-radius: 16px;
+  padding: 14px 12px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.project-page--case-study .case-study-metric-box--hide {
+  display: none;
+}
+
+.project-page--case-study .case-study-metric-value {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  display: block;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.project-page--case-study .case-study-metric-label {
+  margin-top: 10px;
+  font-size: 10px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+}
+
+/* when hiding metric boxes, the label still uses the same sizing */
+
+.project-page--case-study .case-study-metric-card--ces .case-study-metric-box {
+  border-color: rgba(255, 102, 102, 0.9);
+  background: rgba(255, 102, 102, 0.18);
+}
+
+.project-page--case-study .case-study-metric-card--task .case-study-metric-box {
+  border-color: rgba(255, 140, 42, 0.95);
+  background: rgba(255, 140, 42, 0.18);
+}
+
+.project-page--case-study .case-study-metric-card--engagement .case-study-metric-box {
+  border-color: rgba(255, 206, 96, 0.95);
+  background: rgba(255, 206, 96, 0.16);
+}
+
+.project-page--case-study .case-study-metric-card--retention .case-study-metric-box {
+  border-color: rgba(255, 106, 138, 0.95);
+  background: rgba(255, 106, 138, 0.16);
+}
+
+@media (max-width: 900px) {
+  .project-page--case-study .case-study-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Text-only version of the metrics cards (keep wording, remove colored boxes) */
+.project-page--case-study .case-study-metrics-text-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.project-page--case-study .case-study-metrics-text-item {
+  text-align: center;
+}
+
+.project-page--case-study .case-study-metrics-text-value {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.project-page--case-study .case-study-metrics-text-label {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .project-page--case-study .case-study-metrics-text-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.project-page--case-study .case-study-flow-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 6px 0 16px 0;
+  align-items: flex-start;
+  overflow: visible;
+  min-height: 0;
+}
+
+.project-page--case-study .case-study-flow-titles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 44px 0 2px 0;
+  align-items: baseline;
+}
+
+.project-page--case-study .case-study-flow-title-cell {
+  flex: 1 1 260px;
+  max-width: calc(33.333% - 16px);
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.project-page--case-study .case-study-flow-row .workflow-image-wrapper {
+  flex: 1 1 260px;
+  max-width: calc(33.333% - 16px);
+  overflow: visible;
+  min-height: 0;
+}
+
+.project-page--case-study .case-study-flow-row .workflow-image-wrapper--left .workflow-image {
+  width: 80%;
+}
+
+.project-page--case-study .workflow-image-wrapper {
+  margin: 16px 0;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.project-page--case-study .workflow-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: brightness(1.05) contrast(1.15);
+}
+
+.project-page--case-study .workflow-image--full {
+  max-width: 100%;
+  width: 100%;
+}
+
+.project-page--case-study .workflow-image-wrapper--full::after {
+  display: none;
+}
+
+/* Mantou design objective: stronger clarity without invert (keeps original hues) */
+.project-page--case-study .workflow-image.workflow-image--mantou-objective {
+  filter: brightness(1.12) contrast(1.22) saturate(1.18);
+}
+
+.project-page--case-study .case-study-flow-row .workflow-image {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.project-page--case-study .workflow-image-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  background: #000000;
+}
+
+/* 流程图行内的图片不添加遮挡块，避免裁掉底部 */
+.project-page--case-study .case-study-flow-row .workflow-image-wrapper::after {
+  display: none;
+}
+
+/* 上方：全幅主图，与标题、下方内容隔开间距（与首页一致） */
+.project-page--case-study .case-study-hero-image {
+  width: 100%;
+  margin-top: 88px;
+  margin-bottom: 56px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.project-page--case-study .case-study-hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* Footer */
+.project-page--case-study .case-study-footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+.project-page--case-study .case-study-footer p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.project-page--case-study .case-study-footer .back-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.project-page--case-study .case-study-footer .back-link:hover {
+  text-decoration: underline;
+}
+
+.project-page--case-study .site-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 24px 40px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .project-page--case-study .case-study-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}

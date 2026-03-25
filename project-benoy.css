@@ -1,0 +1,216 @@
+/* 完全按照 https://www.benoy.com/projects/east-hotel/ 的排版与内容结构 */
+
+.project-page--benoy .page {
+  max-width: none;
+  padding: 0;
+  gap: 0;
+}
+
+.project-page--benoy .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 24px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+/* 上方：全幅主图 — 下移并完整展示，不裁剪 */
+.project-page--benoy .benoy-hero-image {
+  width: 100%;
+  margin-top: 80px;
+  min-height: auto;
+  max-height: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+}
+
+.project-page--benoy .benoy-hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* 下方：左文字、右图片 */
+.project-page--benoy .benoy-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 80px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 96px 24px 80px;
+  align-items: start;
+}
+
+.project-page--benoy .benoy-content {
+  max-width: 480px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.project-page--benoy .benoy-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.project-page--benoy .benoy-sidebar-image {
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.project-page--benoy .benoy-sidebar-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* Original Benoy-like behavior: fill the sidebar container */
+  object-fit: cover;
+  object-position: center;
+  vertical-align: top;
+}
+
+/* Academic Project 4: avoid cover-cropping to keep text/images sharper */
+.project-page--benoy.project-page--academic-04 .benoy-sidebar-image img {
+  object-fit: contain;
+}
+
+.project-page--benoy .benoy-sidebar-image:first-child img {
+  object-position: 65% center;
+}
+
+.project-page--qiddiya .benoy-sidebar-image:first-child img {
+  object-position: 30% center;
+}
+
+.project-page--one-hotel .benoy-sidebar-image:first-child img {
+  object-position: 18% center;
+}
+
+.project-page--zuibaichi .benoy-sidebar-image:first-child img {
+  object-position: 60% center;
+}
+
+.project-page--mangrove .benoy-sidebar-image:nth-child(2) {
+  background: #ffffff;
+}
+
+.project-page--mangrove .benoy-sidebar-image:nth-child(2) img {
+  object-fit: contain;
+}
+
+.project-page--benoy .benoy-sidebar-image:nth-child(3) img {
+  object-position: 65% center;
+}
+
+/* 标题：项目名 */
+.project-page--benoy .benoy-content .benoy-title {
+  font-size: clamp(20px, 2.8vw, 28px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 8px 0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* 地点 */
+.project-page--benoy .benoy-content .benoy-location {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.02em;
+  margin: 0 0 96px 0;
+}
+
+/* 副标题 / tagline（与 Benoy 的 "A calm and luxurious space that means business" 一致） */
+.project-page--benoy .benoy-content .benoy-tagline {
+  font-size: 20px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin: 0 0 40px 0;
+}
+
+/* 小标题：Service, Sector, Client, Size, Challenge, Solution, Result */
+.project-page--benoy .benoy-meta-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.project-page--benoy .benoy-meta-value {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 24px 0;
+}
+
+.project-page--benoy .benoy-body {
+  font-size: 15px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 32px 0;
+}
+
+/* Slight indent for nested Solution sub-points */
+.project-page--benoy .benoy-body-indent {
+  padding-left: 1.25em;
+  margin-bottom: 0;
+}
+
+.project-page--benoy .benoy-body-indent .benoy-body:last-child {
+  margin-bottom: 32px;
+}
+
+/* Return to my work */
+.project-page--benoy .benoy-footer {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.project-page--benoy .back-link {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-page--benoy .back-link:hover {
+  color: #fff;
+}
+
+.project-page--benoy .site-footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 24px 40px;
+}
+
+@media (max-width: 900px) {
+  .project-page--benoy .benoy-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-page--benoy .benoy-hero-image {
+    min-height: 50vh;
+  }
+}

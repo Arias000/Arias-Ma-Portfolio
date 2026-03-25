@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>One Hotel — Arias Ma</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="project-benoy.css" />
+</head>
+<body class="project-page--benoy project-page--one-hotel">
+  <div class="page">
+    <header class="site-header">
+      <div class="header-left">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">Arias Ma</a>
+        <nav class="nav">
+          <div class="nav-item nav-item--dropdown">
+            <a class="nav-link" href="index.html#work" aria-haspopup="true">Work</a>
+            <div class="dropdown" role="menu" aria-label="Work submenu">
+              <a role="menuitem" href="index.html#practice-work">Practice Work</a>
+              <a role="menuitem" href="index.html#academic-work">Academic Work</a>
+            </div>
+          </div>
+          <a href="index.html#intro">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 上方：全幅主图 -->
+    <section class="benoy-hero-image">
+      <img src="one hotel.jpg" alt="One Hotel" />
+    </section>
+
+    <!-- 下方：左文字、右图片 -->
+    <div class="benoy-main">
+      <div class="benoy-content">
+        <h1 class="benoy-title">One Hotel</h1>
+        <p class="benoy-location">Riyadh, Saudi Arabia</p>
+
+        <h3 class="benoy-meta-label">Service</h3>
+        <p class="benoy-meta-value">Landscape Architecture</p>
+
+        <h3 class="benoy-meta-label">Sector</h3>
+        <p class="benoy-meta-value">Hospitality</p>
+
+        <h3 class="benoy-meta-label">Client</h3>
+        <p class="benoy-meta-value">—</p>
+
+        <h3 class="benoy-meta-label">Size</h3>
+        <p class="benoy-meta-value">—</p>
+
+        <h3 class="benoy-meta-label">Overview</h3>
+        <p class="benoy-body">The DG II 1-Hotel landscape design project is located in Saudi Arabia, situated on a rocky peninsula overlooking the spectacular panoramic views of Wadi Hanifa. The core design narrative is &quot;Tranquillity Vista Exploration,&quot; with inspiration deeply rooted in the Kingdom&apos;s Oasis, Geology, and Topography.</p>
+        <p class="benoy-body">Conceived as a &quot;Mosaic Landscape&quot; that surprises and unfolds, the design encourages guests to explore a series of distinct spaces tied together by a single unified aesthetic.</p>
+        <h3 class="benoy-meta-label">Challenge</h3>
+        <p class="benoy-body">A primary challenge in developing this ultra-luxury property was to take advantage of the spectacular location while effectively providing shade and privacy, which are key considerations for a luxury resort. Designers had to navigate the dramatic contoured landform of the rocky peninsula to create a functional yet contemporary space.</p>
+        <p class="benoy-body">Furthermore, the design needed to maintain an authentic character that is &quot;of its place,&quot; balancing modern luxury standards with the harsh realities of the local desert environment.</p>
+
+        <h3 class="benoy-meta-label">Solution</h3>
+        <p class="benoy-body">To address these challenges, the design features a lush, central &quot;Garden of Life&quot; Courtyard, an intimate sanctuary at the heart of the hotel planted with native species and fruiting trees like Guava and Pomegranate to provide natural shade and vibrancy.</p>
+        <p class="benoy-body">This central core is linked to the perimeter via a series of &quot;porosity portals&quot; that lead to a Wadi-top walk, ensuring full permeability and promoting exploration. Additional features include a two-tiered organic pool inspired by the land&apos;s contours, the use of rugged natural stone walls, hewn stone steps, and low-level seductive lighting to create.</p>
+
+        <h3 class="benoy-meta-label">Result</h3>
+        <p class="benoy-body">The final result is a landscape that is truly rooted in place, built from the bedrock and working in tandem with the architecture to frame views of the spectacular wadi setting. The project offers a variety of sensory guest experiences, ranging from intimate pockets for contemplation to larger areas like the Sunrise Garden for social gatherings, weddings, and morning yoga.</p>
+        <p class="benoy-body">By successfully blending contemporary luxury with the native Saudi environment, the design creates a unique sanctuary that celebrates the unique geology and beauty of the peninsula.</p>
+
+        <p class="benoy-footer">
+          <a href="index.html#practice-work" class="back-link">Return to my work</a>
+        </p>
+      </div>
+      <aside class="benoy-sidebar">
+        <div class="benoy-sidebar-image">
+          <img src="1hotel01.jpg?v=2" alt="One Hotel 1" />
+        </div>
+        <div class="benoy-sidebar-image">
+          <img src="1hotel03.jpg" alt="One Hotel 2" />
+        </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Arias Ma. All rights reserved.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

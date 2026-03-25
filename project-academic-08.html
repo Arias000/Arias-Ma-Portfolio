@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Project — Arias Ma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="project-benoy.css" />
+</head>
+<body class="project-page--benoy">
+  <div class="page">
+    <header class="site-header">
+      <div class="header-left">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">Arias Ma</a>
+        <nav class="nav">
+          <div class="nav-item nav-item--dropdown">
+            <a class="nav-link" href="index.html#work" aria-haspopup="true">Work</a>
+            <div class="dropdown" role="menu" aria-label="Work submenu">
+              <a role="menuitem" href="index.html#practice-work">Practice Work</a>
+              <a role="menuitem" href="index.html#academic-work">Academic Work</a>
+            </div>
+          </div>
+          <a href="index.html#intro">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="benoy-hero-image">
+      <img src="academic8.jpg" alt="Academic project" />
+    </section>
+
+    <div class="benoy-main">
+      <div class="benoy-content">
+        <h1 class="benoy-title">Academic Project Title 8</h1>
+        <p class="benoy-location">Location, Country</p>
+
+        <h3 class="benoy-meta-label">Service</h3>
+        <p class="benoy-meta-value">Landscape Architecture</p>
+        <h3 class="benoy-meta-label">Sector</h3>
+        <p class="benoy-meta-value">Academic</p>
+        <h3 class="benoy-meta-label">Client</h3>
+        <p class="benoy-meta-value">—</p>
+        <h3 class="benoy-meta-label">Size</h3>
+        <p class="benoy-meta-value">—</p>
+
+        <h3 class="benoy-meta-label">Overview</h3>
+        <p class="benoy-body">Placeholder: project overview.</p>
+        <h3 class="benoy-meta-label">Challenge</h3>
+        <p class="benoy-body">Placeholder: challenges.</p>
+        <h3 class="benoy-meta-label">Solution</h3>
+        <p class="benoy-body">Placeholder: solution.</p>
+        <h3 class="benoy-meta-label">Result</h3>
+        <p class="benoy-body">Placeholder: results.</p>
+
+        <p class="benoy-footer">
+          <a href="index.html#academic-work" class="back-link">Return to my work</a>
+        </p>
+      </div>
+      <aside class="benoy-sidebar">
+        <div class="benoy-sidebar-image"><img src="academic8.jpg" alt="Gallery 1" /></div>
+        <div class="benoy-sidebar-image"><img src="academic8.jpg" alt="Gallery 2" /></div>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Arias Ma. All rights reserved.</span>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zuibaichi Chinese Classical Gardens — Arias Ma</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="project-benoy.css" />
+</head>
+<body class="project-page--benoy project-page--zuibaichi">
+  <div class="page">
+    <header class="site-header">
+      <div class="header-left">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">Arias Ma</a>
+        <nav class="nav">
+          <div class="nav-item nav-item--dropdown">
+            <a class="nav-link" href="index.html#work" aria-haspopup="true">Work</a>
+            <div class="dropdown" role="menu" aria-label="Work submenu">
+              <a role="menuitem" href="index.html#practice-work">Practice Work</a>
+              <a role="menuitem" href="index.html#academic-work">Academic Work</a>
+            </div>
+          </div>
+          <a href="index.html#intro">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 上方：全幅主图 -->
+    <section class="benoy-hero-image">
+      <img src="zuibaichi.jpg" alt="Zuibaichi Chinese Classical Gardens" />
+    </section>
+
+    <!-- 下方：左文字、右图片 -->
+    <div class="benoy-main">
+      <div class="benoy-content">
+        <h1 class="benoy-title">Zuibaichi Chinese Classical Gardens</h1>
+        <p class="benoy-location">Shanghai, China</p>
+
+        <h3 class="benoy-meta-label">Service</h3>
+        <p class="benoy-meta-value">Landscape Architecture</p>
+
+        <h3 class="benoy-meta-label">Sector</h3>
+        <p class="benoy-meta-value">Cultural + Heritage</p>
+
+        <h3 class="benoy-meta-label">Client</h3>
+        <p class="benoy-meta-value">—</p>
+
+        <h3 class="benoy-meta-label">Size</h3>
+        <p class="benoy-meta-value">—</p>
+
+        <h3 class="benoy-meta-label">Overview</h3>
+        <p class="benoy-body">Located in the Songjiang District of Shanghai and covering an area of approximately 51,285 square meters, Zuibaichi Park is the oldest of the five famous classical gardens in Shanghai, dating back to the Song Dynasty and famously renovated by masters such as Dong Qichang.</p>
+        <p class="benoy-body">This renewal project focuses on the refined enhancement of Songjiang&apos;s urban public space system, aiming to expand modern recreational functions while strictly protecting and inheriting the garden&apos;s original layout, historical spirit, and cultural charm.</p>
+        <h3 class="benoy-meta-label">Challenge</h3>
+        <p class="benoy-body">The primary challenge of the project was to balance the preservation of the Ming Dynasty literati garden characteristics with the demands of high-intensity modern public activities under a limited investment budget.</p>
+        <p class="benoy-body">Specifically, the opening of Shanghai Metro Line 9 created significant passenger distribution pressure at the park&apos;s western entrance square, and the narrow, enclosed courtyards of the classical garden struggled to accommodate large tourist flows. Additionally, designers had to optimize high-density plant spaces and integrate modern leisure functions within the existing topography and water systems.</p>
+
+        <h3 class="benoy-meta-label">Solution</h3>
+        <p class="benoy-body">The design team implemented an eco-friendly strategy by recycling old materials&mdash;such as bricks, tiles, and stones&mdash;to create a sense of place while reducing costs. They utilized &quot;painting-inspired&quot; landscaping techniques to restore the literati garden spirit and connected the park&apos;s water features with urban canals to achieve a natural water cycle.</p>
+        <p class="benoy-body">To manage the influx of metro passengers, unified planting beds at varying elevations were used to guide traffic clearly, and modern security cameras were discreetly integrated using a combination of landscape and technology to ensure heritage protection without compromising the garden&apos;s aesthetic.</p>
+
+        <h3 class="benoy-meta-label">Result</h3>
+        <p class="benoy-body">The project received significant international recognition, winning the 2019 BALI National Landscape Award for its high level of professionalism and design quality. It successfully resolved the passenger distribution issues at the western entrance and improved the park&apos;s water quality and security monitoring capabilities.</p>
+        <p class="benoy-body">Ultimately, the project provides citizens with a richer and more comfortable public leisure space that fosters a strong sense of belonging, all while ensuring the maximum protection of the ancient garden and its cultural relics.</p>
+
+        <p class="benoy-footer">
+          <a href="index.html#practice-work" class="back-link">Return to my work</a>
+        </p>
+      </div>
+      <aside class="benoy-sidebar">
+        <div class="benoy-sidebar-image">
+          <img src="zuibaichi01.jpg" alt="Zuibaichi Chinese Classical Gardens 1" />
+        </div>
+        <div class="benoy-sidebar-image">
+          <img src="zuibaichi02.jpg?v=1" alt="Zuibaichi Chinese Classical Gardens 2" />
+        </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Arias Ma. All rights reserved.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
