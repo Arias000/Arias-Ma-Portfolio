@@ -221,6 +221,31 @@
   margin: 0 0 20px 0;
 }
 
+/* Empathize step: Research Approach → User Pain Points offset by 1ch (right + down) */
+.project-page--case-study .case-study-research-indent {
+  padding-left: 1ch;
+  padding-top: 1ch;
+}
+
+.project-page--case-study .case-study-define-indent {
+  padding-left: 1ch;
+  padding-top: 1ch;
+}
+
+.project-page--case-study .case-study-ideate-indent {
+  padding-left: 1ch;
+  padding-top: 1ch;
+}
+
+.project-page--case-study .case-study-prototype-indent {
+  padding-left: 1ch;
+  padding-top: 1ch;
+}
+
+.project-page--case-study .case-study-test-indent {
+  padding-left: 1ch;
+}
+
 .project-page--case-study .case-study-step h3 {
   font-size: 16px;
   font-weight: 600;
